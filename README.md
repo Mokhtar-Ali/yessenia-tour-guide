@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yessenia Tours
 
-## Getting Started
+Website for Yessenia, a tour guide in Medellín. Built with Next.js (App Router), Tailwind CSS and Motion, hosted on Vercel.
 
-First, run the development server:
+## Run it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. The site redirects to `/en` or `/es` based on the browser language.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What is in here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Path | Purpose |
+| --- | --- |
+| `src/app/[lang]/page.tsx` | Landing page |
+| `src/app/[lang]/tours` | Tours listing and tour detail pages |
+| `src/app/[lang]/checkout` | Checkout and success pages |
+| `src/app/[lang]/about`, `contact` | About and contact pages |
+| `src/app/api/checkout` | Validates a booking server-side and starts the deposit payment |
+| `src/app/api/contact` | Contact form endpoint (email sending still to do) |
+| `src/dictionaries/en.json`, `es.json` | All site text in both languages |
+| `src/data/tours.ts` | Tours data. Currently placeholder, replace with the Airtable export |
+| `src/lib/pricing.ts` | 30% deposit math |
+| `src/lib/payments` | Payment providers (Wompi, plus a demo mode) |
+| `src/proxy.ts` | Redirects `/` to the right language |
 
-## Learn More
+## Brand
 
-To learn more about Next.js, take a look at the following resources:
+Burgundy `#6d1230` with deep burgundy `#470a1e`, a blush tint and a small gold accent. Colors are defined in `src/app/globals.css`. Fonts are Cormorant Garamond (headings) and Manrope (body), self-hosted from npm.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Payments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deposit is 30% of the total, paid online. The remaining 70% is paid on the day.
 
-## Deploy on Vercel
+With no payment keys set, checkout runs in **demo mode**: it goes straight to the success page and no money moves. To go live, copy `.env.example` to `.env.local`, fill in the Wompi keys, and add the same variables in Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Wompi Colombia only accepts COP, so the USD deposit is converted using `USD_COP_RATE`. The booking price is always recomputed on the server from the tour data.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Still to do
+
+- Replace placeholder tours with the Airtable export (CSV to `src/data/tours.ts`)
+- Add real photos, Yessenia's portrait, hero video and testimonials
+- Save bookings, receive the payment webhook, and send confirmation emails to the guest and Yessenia
+- Availability calendar connected to Yessenia's calendar
+- Logo, real contact details, cancellation policy text
+- Leads tracking system
+- Bold as an alternative payment provider, if wanted
