@@ -1,9 +1,12 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { calculatePrice, formatUsd } from "@/lib/pricing";
+
+const noopSubscribe = () => () => {};
+const tomorrowIso = () => new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
 export type CheckoutTour = {
   slug: string;
@@ -24,14 +27,9 @@ export function CheckoutForm({ locale, tours, labels }: CheckoutFormProps) {
 
   const [slug, setSlug] = useState(tours.some((tour) => tour.slug === initialSlug) ? (initialSlug as string) : "");
   const [guests, setGuests] = useState(2);
-  const [minDate, setMinDate] = useState("");
+  // Empty on the server, tomorrow's date in the browser, so the static page never depends on the clock.
+  const minDate = useSyncExternalStore(noopSubscribe, tomorrowIso, () => "");
   const [status, setStatus] = useState<"idle" | "sending" | "error" | "invalid">("idle");
-
-  // Computed after mount so the server-rendered page never depends on the current time.
-  useEffect(() => {
-    const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
-    setMinDate(tomorrow.toISOString().slice(0, 10));
-  }, []);
 
   const tour = tours.find((item) => item.slug === slug);
   const guestCount = tour ? Math.min(guests, tour.maxGuests) : guests;
