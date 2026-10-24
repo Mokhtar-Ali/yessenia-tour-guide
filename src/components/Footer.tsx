@@ -40,7 +40,7 @@ export async function Footer({ locale, dict }: FooterProps) {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-white/50 sm:flex-row sm:justify-between sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-6 text-xs text-white sm:flex-row sm:justify-between sm:px-8">
           <p>
             © {year} {dict.brand.name}. {dict.footer.rights}
           </p>

@@ -1,10 +1,12 @@
 "use client";
 
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
+import { media } from "@/lib/media";
 import { AnimatedHeading } from "./AnimatedHeading";
 
 type HeroProps = {
@@ -32,7 +34,8 @@ export function Hero({ locale, hero }: HeroProps) {
         transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="mx-auto w-full max-w-7xl px-5 pb-20 pt-32 sm:px-8">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 pb-20 pt-32 sm:px-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <div>
         <motion.p
           initial={reduce ? false : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +49,7 @@ export function Hero({ locale, hero }: HeroProps) {
           as="h1"
           text={hero.title}
           delay={0.2}
-          className="font-display max-w-4xl text-5xl font-semibold leading-[1.02] text-white sm:text-7xl lg:text-8xl"
+          className="font-display max-w-4xl text-5xl font-semibold leading-[1.02] text-white sm:text-7xl lg:text-7xl xl:text-8xl"
         />
 
         <motion.p
@@ -76,6 +79,25 @@ export function Hero({ locale, hero }: HeroProps) {
           >
             {hero.cta2}
           </Link>
+        </motion.div>
+        </div>
+
+        <motion.div
+          initial={reduce ? false : { opacity: 0, scale: 0.94, y: 24 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="relative mx-auto w-full max-w-sm lg:max-w-none"
+        >
+          <div className="relative aspect-[4/5] overflow-hidden rounded-t-[999px] rounded-b-3xl border border-white/25 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.6)]">
+            <Image
+              src={media("about me.jpeg")}
+              alt="Yessenia"
+              fill
+              priority
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              className="object-cover"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

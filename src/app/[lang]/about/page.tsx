@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AnimatedHeading } from "@/components/AnimatedHeading";
 import { Reveal } from "@/components/Reveal";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { media } from "@/lib/media";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/about">): Promise<Metadata> {
   const { lang } = await params;
@@ -18,10 +20,16 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
 
   return (
     <section className="mx-auto grid max-w-7xl gap-14 px-5 pb-24 pt-40 sm:px-8 lg:grid-cols-2">
-      {/* TODO: replace with a portrait of Yessenia */}
       <Reveal>
-        <div className="flex aspect-[4/5] items-end rounded-3xl bg-gradient-to-br from-burgundy via-burgundy-deep to-black p-8">
-          <span className="font-display text-3xl text-white/80">Yessenia</span>
+        <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-burgundy-deep">
+          <Image
+            src={media("about me.jpeg")}
+            alt="Yessenia"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
         </div>
       </Reveal>
       <div className="self-center">
