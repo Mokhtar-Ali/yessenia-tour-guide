@@ -1,0 +1,140 @@
+{
+  "brand": {
+    "name": "Yessenia",
+    "tagline": "Private tours in Medellín"
+  },
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "about": "About",
+    "contact": "Contact",
+    "book": "Book a tour"
+  },
+  "hero": {
+    "eyebrow": "Medellín, Colombia",
+    "title": "See the real Medellín with someone who loves it",
+    "subtitle": "Local stories, hidden corners and unforgettable days, guided by Yessenia and her team.",
+    "cta": "Explore tours",
+    "cta2": "Talk to Yessenia"
+  },
+  "marquee": ["Comuna 13", "Guatapé", "Coffee farms", "Graffiti", "Street food", "Metrocable", "Parque Arví", "Botero"],
+  "stats": [
+    { "value": "5,000+", "label": "Happy travelers" },
+    { "value": "12", "label": "Curated tours" },
+    { "value": "2", "label": "Languages" },
+    { "value": "30%", "label": "Deposit to reserve" }
+  ],
+  "featured": {
+    "eyebrow": "Signature experiences",
+    "title": "Pick your Medellín",
+    "viewAll": "View all tours"
+  },
+  "why": {
+    "eyebrow": "Why Yessenia",
+    "title": "Small details make a big trip",
+    "items": [
+      { "title": "Local expertise", "text": "Born and raised here. You get the stories no guidebook has." },
+      { "title": "Fair, clear pricing", "text": "No surprises. Reserve with a 30% deposit and pay the rest on the day." },
+      { "title": "A real team", "text": "Trusted guides and drivers, so your day runs smoothly from pickup to goodbye." },
+      { "title": "English and Spanish", "text": "Tours in your language, for travelers, families and groups." }
+    ]
+  },
+  "video": {
+    "eyebrow": "On tour",
+    "title": "Come along for a day with us"
+  },
+  "testimonials": {
+    "eyebrow": "Kind words",
+    "title": "Travelers say it best",
+    "items": [
+      { "quote": "Placeholder testimonial. Replace with a real guest message.", "name": "Guest name", "from": "City, Country" },
+      { "quote": "Placeholder testimonial. Replace with a real guest message.", "name": "Guest name", "from": "City, Country" },
+      { "quote": "Placeholder testimonial. Replace with a real guest message.", "name": "Guest name", "from": "City, Country" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Good to know",
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "How does the deposit work?", "a": "You pay 30% online to reserve your date. The remaining 70% is paid on the day of the tour." },
+      { "q": "Can I cancel or reschedule?", "a": "Placeholder. Add Yessenia's real cancellation policy here." },
+      { "q": "Are tours private?", "a": "Placeholder. Explain which tours are private and which are shared." },
+      { "q": "What languages do you offer?", "a": "Tours are available in English and Spanish." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to see Medellín?",
+    "text": "Choose a tour, pick a date and reserve with a small deposit.",
+    "button": "Browse tours"
+  },
+  "toursPage": {
+    "eyebrow": "All tours",
+    "title": "Find your day in Medellín",
+    "subtitle": "Every tour is guided by Yessenia or a trusted member of her team.",
+    "all": "All",
+    "from": "From",
+    "perPerson": "per person",
+    "details": "View details"
+  },
+  "tour": {
+    "duration": "Duration",
+    "group": "Group size",
+    "meeting": "Meeting point",
+    "included": "What's included",
+    "highlights": "Highlights",
+    "upTo": "Up to {n} guests",
+    "reserve": "Reserve now",
+    "reserveNote": "Reserve with a 30% deposit",
+    "back": "Back to tours",
+    "related": "You may also like"
+  },
+  "checkout": {
+    "eyebrow": "Checkout",
+    "title": "Reserve your tour",
+    "tour": "Tour",
+    "date": "Date",
+    "guests": "Guests",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "notes": "Notes (hotel, special requests)",
+    "summary": "Summary",
+    "total": "Total",
+    "deposit": "Deposit due today (30%)",
+    "balance": "Balance due on the day",
+    "pay": "Pay deposit",
+    "processing": "Processing...",
+    "secure": "Secure payment. You will get a confirmation email.",
+    "noTour": "Choose a tour first",
+    "chooseTour": "Select a tour",
+    "error": "Something went wrong. Please try again.",
+    "required": "Please fill in all required fields."
+  },
+  "success": {
+    "title": "You're booked",
+    "text": "Thank you. Check your email for the confirmation. Yessenia's team will be in touch to confirm pickup details.",
+    "home": "Back to home"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Hi, I'm Yessenia",
+    "paragraphs": [
+      "Placeholder. Add Yessenia's story here: where she grew up, why she became a guide, and what makes her tours different.",
+      "Placeholder. Mention her team and the languages they speak."
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's plan your day",
+    "text": "Questions before you book? Send a message and we will reply quickly.",
+    "name": "Your name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sent": "Thanks. We will reply soon."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "made": "Website by Cleopatra Solutions"
+  }
+}

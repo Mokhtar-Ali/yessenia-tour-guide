@@ -1,0 +1,140 @@
+{
+  "brand": {
+    "name": "Yessenia",
+    "tagline": "Tours privados en Medellín"
+  },
+  "nav": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "book": "Reservar tour"
+  },
+  "hero": {
+    "eyebrow": "Medellín, Colombia",
+    "title": "Conoce la Medellín real con alguien que la ama",
+    "subtitle": "Historias locales, rincones escondidos y días inolvidables, guiados por Yessenia y su equipo.",
+    "cta": "Ver tours",
+    "cta2": "Hablar con Yessenia"
+  },
+  "marquee": ["Comuna 13", "Guatapé", "Fincas de café", "Grafiti", "Comida callejera", "Metrocable", "Parque Arví", "Botero"],
+  "stats": [
+    { "value": "5.000+", "label": "Viajeros felices" },
+    { "value": "12", "label": "Tours curados" },
+    { "value": "2", "label": "Idiomas" },
+    { "value": "30%", "label": "Depósito para reservar" }
+  ],
+  "featured": {
+    "eyebrow": "Experiencias destacadas",
+    "title": "Elige tu Medellín",
+    "viewAll": "Ver todos los tours"
+  },
+  "why": {
+    "eyebrow": "Por qué Yessenia",
+    "title": "Los detalles hacen un gran viaje",
+    "items": [
+      { "title": "Experiencia local", "text": "Nacida y criada aquí. Recibes las historias que ninguna guía tiene." },
+      { "title": "Precios justos y claros", "text": "Sin sorpresas. Reserva con un depósito del 30% y paga el resto el día del tour." },
+      { "title": "Un equipo real", "text": "Guías y conductores de confianza, para que tu día fluya desde la recogida hasta la despedida." },
+      { "title": "Inglés y español", "text": "Tours en tu idioma, para viajeros, familias y grupos." }
+    ]
+  },
+  "video": {
+    "eyebrow": "En tour",
+    "title": "Acompáñanos por un día"
+  },
+  "testimonials": {
+    "eyebrow": "Palabras amables",
+    "title": "Los viajeros lo dicen mejor",
+    "items": [
+      { "quote": "Testimonio de ejemplo. Reemplazar con un mensaje real de un cliente.", "name": "Nombre del cliente", "from": "Ciudad, País" },
+      { "quote": "Testimonio de ejemplo. Reemplazar con un mensaje real de un cliente.", "name": "Nombre del cliente", "from": "Ciudad, País" },
+      { "quote": "Testimonio de ejemplo. Reemplazar con un mensaje real de un cliente.", "name": "Nombre del cliente", "from": "Ciudad, País" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Bueno saber",
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cómo funciona el depósito?", "a": "Pagas el 30% en línea para reservar tu fecha. El 70% restante se paga el día del tour." },
+      { "q": "¿Puedo cancelar o reprogramar?", "a": "Ejemplo. Agregar aquí la política real de cancelación de Yessenia." },
+      { "q": "¿Los tours son privados?", "a": "Ejemplo. Explicar qué tours son privados y cuáles son compartidos." },
+      { "q": "¿En qué idiomas ofrecen los tours?", "a": "Los tours están disponibles en inglés y español." }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para ver Medellín?",
+    "text": "Elige un tour, escoge una fecha y reserva con un pequeño depósito.",
+    "button": "Ver tours"
+  },
+  "toursPage": {
+    "eyebrow": "Todos los tours",
+    "title": "Encuentra tu día en Medellín",
+    "subtitle": "Cada tour es guiado por Yessenia o por un miembro de confianza de su equipo.",
+    "all": "Todos",
+    "from": "Desde",
+    "perPerson": "por persona",
+    "details": "Ver detalles"
+  },
+  "tour": {
+    "duration": "Duración",
+    "group": "Tamaño del grupo",
+    "meeting": "Punto de encuentro",
+    "included": "Qué incluye",
+    "highlights": "Lo más destacado",
+    "upTo": "Hasta {n} personas",
+    "reserve": "Reservar ahora",
+    "reserveNote": "Reserva con un depósito del 30%",
+    "back": "Volver a tours",
+    "related": "También te puede gustar"
+  },
+  "checkout": {
+    "eyebrow": "Pago",
+    "title": "Reserva tu tour",
+    "tour": "Tour",
+    "date": "Fecha",
+    "guests": "Personas",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono / WhatsApp",
+    "notes": "Notas (hotel, solicitudes especiales)",
+    "summary": "Resumen",
+    "total": "Total",
+    "deposit": "Depósito de hoy (30%)",
+    "balance": "Saldo el día del tour",
+    "pay": "Pagar depósito",
+    "processing": "Procesando...",
+    "secure": "Pago seguro. Recibirás un correo de confirmación.",
+    "noTour": "Primero elige un tour",
+    "chooseTour": "Selecciona un tour",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "required": "Por favor completa todos los campos obligatorios."
+  },
+  "success": {
+    "title": "Reserva confirmada",
+    "text": "Gracias. Revisa tu correo para la confirmación. El equipo de Yessenia te contactará para confirmar los detalles de recogida.",
+    "home": "Volver al inicio"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Hola, soy Yessenia",
+    "paragraphs": [
+      "Ejemplo. Agregar aquí la historia de Yessenia: dónde creció, por qué se hizo guía y qué hace diferentes sus tours.",
+      "Ejemplo. Mencionar a su equipo y los idiomas que hablan."
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Planeemos tu día",
+    "text": "¿Preguntas antes de reservar? Envía un mensaje y responderemos pronto.",
+    "name": "Tu nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sent": "Gracias. Responderemos pronto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "made": "Sitio web por Cleopatra Solutions"
+  }
+}
