@@ -24,11 +24,6 @@ export function Header({ locale, nav, brand }: HeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close the mobile menu after navigating.
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   const otherLocale: Locale = locale === "en" ? "es" : "en";
   const switchedPath = pathname.replace(/^\/(en|es)/, `/${otherLocale}`) || `/${otherLocale}`;
 
@@ -95,12 +90,18 @@ export function Header({ locale, nav, brand }: HeaderProps) {
       {open && (
         <nav className="border-t border-line bg-white px-5 pb-6 pt-2 md:hidden" aria-label="Mobile">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="block py-3 text-lg font-medium text-foreground">
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="block py-3 text-lg font-medium text-foreground"
+            >
               {link.label}
             </Link>
           ))}
           <Link
             href={localePath(locale, "/tours")}
+            onClick={() => setOpen(false)}
             className="mt-3 block rounded-full bg-burgundy px-5 py-3 text-center font-semibold text-white"
           >
             {nav.book}
